@@ -2,14 +2,18 @@ const Footer = () => {
   return (
     <div class="attribution">
       <span>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Challenge by&nbsp;
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">
           Frontend Mentor
         </a>
         .&nbsp;
       </span>
       <span>
-        Coded by <a href="#">Andrew Neely</a>.
+        Coded by{" "}
+        <a href="https://github.com/Andrew-Neely-82/social-links-profile" target="_blank" rel="noopener noreferrer">
+          Andrew Neely
+        </a>
+        .
       </span>
     </div>
   );

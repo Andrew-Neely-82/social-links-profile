@@ -37,55 +37,78 @@ body {
   padding: 2rem;
   border-radius: 0.5rem;
 
-  .bio-container {
-    @include flex;
+  @media screen and (max-width: 375px) {
+    padding: 1.5rem;
+  }
 
-    img {
-      height: 6em;
-      border-radius: 100rem;
+  .card {
+    width: 20rem;
+
+    @media screen and (max-width: 375px) {
+      width: 16.5rem;
     }
 
-    .name {
-      font-size: 1.75rem;
-    }
+    .bio-container {
+      @include flex;
 
-    .location {
-      color: map-get($colors, Green);
-    }
+      img {
+        width: 5.5em;
+        border-radius: 100rem;
+        margin-top: 1.5rem;
+      }
 
-    .quote {
-      font-size: 14px;
+      .name {
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-top: 1.5rem;
+      }
+
+      .location {
+        color: map-get($colors, Green);
+      }
+
+      .quote {
+        margin-block: 1.5rem;
+      }
+
+      .location,
+      .quote {
+        font-size: 14px;
+      }
     }
   }
-}
 
-.links-container {
-  @include flex;
+  .links-container {
+    @include flex;
 
-  .link {
-    width: 100%;
-    margin-block: 0.5rem;
-    background: map-get($colors, Grey);
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75rem;
-    cursor: pointer;
+    .link {
+      width: 100%;
+      margin-block: 0.5rem;
+      background: map-get($colors, Grey);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      cursor: pointer;
 
-    &:hover {
-      background: map-get($colors, Green);
-      color: map-get($colors, Dark-Grey);
+      &:hover {
+        background: map-get($colors, Green);
+        color: map-get($colors, Dark-Grey);
+        font-weight: bold;
+      }
     }
   }
 }
 
 .attribution {
+  position: fixed;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 
   @media screen and (max-width: 375px) {
     flex-direction: column;
