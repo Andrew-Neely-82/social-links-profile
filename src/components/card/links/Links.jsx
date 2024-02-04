@@ -3,8 +3,8 @@ const Links = () => {
 
   return (
     <div className="links-container">
-      {links.map((link) => {
-        return <button className="link">{link}</button>;
+      {links.map((link, key) => {
+        return <button className="link" key={key}>{link}</button>;
       })}
     </div>
   );

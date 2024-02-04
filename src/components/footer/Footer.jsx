@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div class="attribution">
+    <div className="attribution">
       <span>
         Challenge by&nbsp;
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">

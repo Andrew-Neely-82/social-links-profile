@@ -91,11 +91,23 @@ body {
       border-radius: 0.5rem;
       padding: 1rem;
       cursor: pointer;
+      user-select: none;
 
       &:hover {
         background: map-get($colors, Green);
         color: map-get($colors, Dark-Grey);
-        font-weight: bold;
+
+        @media screen and (max-width: 430px) {
+          background: map-get($colors, Grey);
+          color: white;
+        }
+      }
+
+      @media screen and (max-width: 430px) {
+        &:active {
+          background: map-get($colors, Green);
+          color: map-get($colors, Dark-Grey);
+        }
       }
     }
   }
