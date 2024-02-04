@@ -3,7 +3,7 @@ import Bio from "./bio/Bio";
 
 const Card = () => {
   return (
-    <div>
+    <div className="card">
       <Bio />
       <Links />
     </div>

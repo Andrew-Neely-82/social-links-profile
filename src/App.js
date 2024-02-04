@@ -1,11 +1,14 @@
+import { Card, Footer } from "./components/export";
 import "./App.scss";
-import Card from "./components/card/Card";
 
 function App() {
   return (
-    <div className="App">
-      <Card />
-    </div>
+    <>
+      <div className="App">
+        <Card />
+      </div>
+      <Footer />
+    </>
   );
 }
 
